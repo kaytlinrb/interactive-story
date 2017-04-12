@@ -1,12 +1,47 @@
-
-/****Styling*****/
-body{
-  background-image: url('../img/scroll.png');
-  background-size: 100%;
-  margin: auto;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+#secondDiv{
+  display: none;
 }
 
-#oldManImg{
+
+#header{
+  text-align: center;
+}
+#character{
+  margin-top: 150px;
+  background: skyblue;
+}
+body{
+background-image: url('../img/scroll.png');
+background-size: 100%;
+margin: auto;
+}
+
+
+#img{
+  width: 40%;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+#text{
+  width: 55%;
+  display: inline-block;
+
+}
+#img {
+  width: 100%;
+  float:left;
+
+}
+
+#buttons{
+  margin-left: 30%;
+}
+/****Styling*****/
+
+.image{
   width: 100%;
   margin-bottom: 40px;
   display: inline-block;
@@ -14,6 +49,7 @@ body{
 
 .chapterHeader{
   font-size: 30px;
+  text-align: center;
 }
 
 .chapterStructure{
@@ -34,4 +70,29 @@ button{
 /****Hide*****/
 #riddleOne, #riddleOneSuccess, #riddleOneFail, #chapterTwo, #riddleTwoSuccess, #riddleTwoFail{
   display: none;
+}
+=======
+#riddleOne, #riddleOneSuccess, #riddleOneFail, #riddleTwoSuccess, #riddleTwoFail, #riddleTwo, #riddleThreeSuccess, #riddleThreeFail, #riddleThree, #riddleFour, #riddleFourSuccess, #riddleFourFail, #ai, #player, #player-won, #ai-won, #battleSixSuccess,  #battleSixFail{
+  display: none;
+}
+
+#no-line {
+  text-decoration: none;
+  color: black;
+}
+/***rock paper scissors imgs***/
+.img-top {
+  width: 0px;
+}
+
+
+#success-one, #wrong-one{
+  display: none;
+}
+
+#mainDiv{
+  margin: auto;
+  margin-top: 25%;
+  font-family: 'Macondo', cursive;
+  font-size: 30px;
 }
