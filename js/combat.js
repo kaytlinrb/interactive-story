@@ -5,12 +5,12 @@ var queryStats = window.location.hash.substring(1);
 var playerTurn = true;
 //initial stats
 var origPlayer = {name: 'Player', id: 'You', health: 20, damage: 3, will: 2, defense: 2};
-// var origEnemy = {name: 'Enemy', id: 'enemy', health: queryStats.substring(0,2), damage: queryStats.substring(2,3), will: queryStats.substring(3,4), defense:queryStats.substring(4,5)}
-var origEnemy = {name: 'Enemy', id: 'enemy', health: 20, damage: 3, will: 3, defense:2}
+var origEnemy = {name: 'Enemy', id: 'enemy', health: parseInt(queryStats.substring(0,2)), damage: parseInt(queryStats.substring(2,3)), will: parseInt(queryStats.substring(3,4)), defense:parseInt(queryStats.substring(4,5))}
+// var origEnemy = {name: 'Enemy', id: 'enemy', health: 20, damage: 3, will: 3, defense:2}
 //modified stats
 var playerTest = {name: 'Player', id: 'You',  health: 20,damage: 3, will: 2, defense: 2};
-var enemyTest = {name: 'Enemy', id: 'enemy', health: 20, damage: 3, will: 3, defense:2}
-
+// var enemyTest = {name: 'Enemy', id: 'enemy', health: 20, damage: 3, will: 3, defense:2}
+var enemyTest = {name: 'Enemy', id: 'enemy', health: parseInt(queryStats.substring(0,2)), damage: parseInt(queryStats.substring(2,3)), will: parseInt(queryStats.substring(3,4)), defense:parseInt(queryStats.substring(4,5))}
 //turn switch
 function turnSwap(){
   playerTurn=!playerTurn;
@@ -23,7 +23,7 @@ function damage(attacker, defender){
   var roll = Math.ceil(Math.random()*6);
   var damage = Math.abs((roll+attacker.damage)-defender.defense)
   if(roll===6){
-    attack *= 2;
+    damage *= 2;
   }
   $('#'+attacker.id+'Log').append("<li>"+damage+" damage dealt.</li>")
   defender.health -= damage;
@@ -36,6 +36,7 @@ function damage(attacker, defender){
   else{
     turnSwap();
   }
+  console.log(roll, damage);
 }
 
 //Charge function, roll 1-6, add damage. Ignore armor but suffer 1/3 of damage.
@@ -114,6 +115,7 @@ function aiTurn(){
 }
 
 $(document).ready(function(){
+  console.log(enemyTest);
   $('#YouHealth').text('Health: '+origPlayer.health);
   $('#YouDefense').text('Defense: '+origPlayer.defense);
   $('#YouName').text(origPlayer.name);
@@ -171,9 +173,11 @@ $(document).ready(function(){
     }
   });
   $('#proceedWin').click(function(){
-    alert('win');
+    var page = queryStats.substring(6,7);
+    window.location.href = "chapters/"+page+"/chapter"+page+".html";
   });
   $('#proceedLose').click(function(){
-    alert('lost');
+    var page = queryStats.substring(5,6);
+    window.location.href = "chapters/"+page+"/chapter"+page+".html";
   });
 });

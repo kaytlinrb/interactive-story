@@ -130,10 +130,10 @@ $(document).ready(function(){
     }
   });
   $('#proceedWin').click(function(){
-    alert('win');
+    window.location.href='chapters/5/win.html';
   });
   $('#proceedLose').click(function(){
-    alert('lost');
+    window.location.href='chapters/5/lose.html';
   });
 
 });

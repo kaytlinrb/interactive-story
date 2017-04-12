@@ -69,4 +69,10 @@ $(document).ready(function(){
   var humanChoice = $(this).attr('id');
   turn(humanChoice);
  });
+ $('#rpsWin').click(function(){
+   window.location.href='chapters/5/win.html';
+ });
+ $('#rpsLose').click(function(){
+   window.location.href='chapters/5/lose.html';
+ });
 });
