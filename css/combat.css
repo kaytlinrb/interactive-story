@@ -1,0 +1,63 @@
+
+/****Styling*****/
+body{
+  background-image: url('../img/scroll.png');
+  background-size: 100%;
+  padding-bottom: 60px;
+}
+.container{
+  margin-top: 20%;
+  font-family: 'Macondo', cursive;
+  font-size: 20px;
+  width: 80%;
+}
+h1{
+  font-size: 60px;
+  font-weight: bold;
+}
+h2{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+img{
+  height: 200px;
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+#mainCol ul{
+  list-style: none;
+}
+.activePlayer{
+  color: lightgreen;
+}
+#mainCol{
+  text-align: center;
+}
+#buttons{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+}
+#buttons p,ul{
+  text-align: left;
+}
+#buttons button{
+  margin: auto;
+  margin: 10px;
+  height: 80px;
+  width: 120px;
+  font-size: 20px;
+  border: solid 2px black;
+}
+.healthText, .defText{
+  display: inline-block;
+  margin: 10px;
+  color: red;
+}
+.defText{
+  color: blue;
+}
+#proceedWin,#proceedLose{
+  display: none;
+}

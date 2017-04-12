@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/combat.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/combat.js"></script>
+    <meta charset="utf-8">
+    <title>Combat</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id='mainDiv' class='row'>
+        <div class="col-md-4" id='buttonCol'>
+          <div id='buttons'>
+            <img src='img/battle.gif'>
+            <p>You're in combat!</p>
+            <ul>
+              <li>Attack to deal damage that is reduced by defense.</li>
+              <li>Charge to ignore enemy defense but hurt yourself as you attack.</li>
+              <li>Defend to shield yourself from future attacks.</li>
+              <li>Heal yourself to survive.</li>
+            </ul>
+            <br>
+            <button class='btn' id='attack'>Attack</button>
+            <button class='btn' id='charge'>Charge</button>
+            <br>
+            <button class='btn' id='heal'>Heal</button>
+            <button class='btn' id='defend'>Defend</button>
+            <button id='proceedWin'>Proceed</button>
+            <button id='proceedLose'>Proceed</button>
+          </div><!--buttons-->
+        </div>
+        <div class="col-md-8" id='mainCol'>
+          <div id='header'>
+            <h1>Fight!</h1>
+          </div>
+          <div class='row'>
+            <div class='col-md-6'>
+              <h2 id='YouName'>Player</h2>
+              <p id='YouHealth' class='healthText'>Health: </p>
+              <p id='YouDefense' class='defText'>Defense: </p>
+              <ul id='YouLog'>
+              </ul>
+            </div>
+            <div class='col-md-6'>
+              <h2 id='enemyName'>Enemy</h2>
+              <p id='enemyHealth' class='healthText'>Health: </p>
+              <p id='enemyDefense' class='defText'>Defense: </p>
+              <ul id='enemyLog'>
+              </ul>
+            </div>
+          </div><!--row-->
+        </div>
+      </div><!--main-->
+    </div><!--container-->
+    <!-- <a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a> -->
+  </body>
+</html>

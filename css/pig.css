@@ -1,0 +1,22 @@
+
+/****Styling*****/
+body{
+  background-image: url('../img/scroll.png');
+  background-size: 100%;
+  margin:auto;
+  margin-top: 20%;
+  font-family: 'Macondo', cursive;
+  font-size: 20px;
+}
+.activePlayer{
+  color: lightgreen;
+}
+#proceedWin,#proceedLose{
+  display: none;
+}
+.title{
+  background: green;
+}
+.section{
+  background: red;
+}

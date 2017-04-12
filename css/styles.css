@@ -1,0 +1,37 @@
+
+/****Styling*****/
+body{
+  background-image: url('../img/scroll.png');
+  background-size: 100%;
+  margin: auto;
+}
+
+#oldManImg{
+  width: 100%;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+.chapterHeader{
+  font-size: 30px;
+}
+
+.chapterStructure{
+  margin:auto;
+  margin-top: 25%;
+  font-family: 'Macondo', cursive;
+  font-size: 20px;
+}
+
+#chapterOne{
+  width: 55%;
+}
+
+button{
+  margin-left: 30%;
+}
+
+/****Hide*****/
+#riddleOne, #riddleOneSuccess, #riddleOneFail, #chapterTwo, #riddleTwoSuccess, #riddleTwoFail{
+  display: none;
+}
