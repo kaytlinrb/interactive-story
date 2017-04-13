@@ -31,7 +31,7 @@ $('#riddleAttemptButton1').click(function(){
   $('#riddleOne').show();
 });
 $('#combat1Button').click(function(){
-  window.location.href='/Users/Guest/Desktop/interactive-story/combat.html#1021112';
+  window.location.href='../../combat.html#1021112';
 });
 
 $('.riddle1btn').click(function(){
@@ -55,7 +55,7 @@ $('#riddleAttemptButton2').click(function(){
   $('#riddleTwo').show();
 });
 $('#combat2Button').click(function(){
-  window.location.href='/Users/Guest/Desktop/interactive-story/combat.html#2032223';
+  window.location.href='../../combat.html#2032223';
 });
 
 $('.riddle2btn').click(function(){
@@ -135,7 +135,7 @@ $('.proceedButton6').click(function(){
 
 /////PAGE SIX/////
 $('#combatFinal').click(function(){
-  window.location.href='/Users/Guest/Desktop/interactive-story/combat.html#3042267';
+  window.location.href='../../combat.html#3042267';
 });
 
 ////PAGE SEVEN////
