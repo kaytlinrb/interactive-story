@@ -55,7 +55,7 @@ $('#riddleAttemptButton2').click(function(){
   $('#riddleTwo').show();
 });
 $('#combat2Button').click(function(){
-  window.location.href='../../combat.html#2032223';
+  window.location.href='../../combat.html#1021123';
 });
 
 $('.riddle2btn').click(function(){
@@ -135,7 +135,7 @@ $('.proceedButton6').click(function(){
 
 /////PAGE SIX/////
 $('#combatFinal').click(function(){
-  window.location.href='../../combat.html#3042267';
+  window.location.href='../../combat.html#1021167';
 });
 
 ////PAGE SEVEN////
