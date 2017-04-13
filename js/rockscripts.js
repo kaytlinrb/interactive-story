@@ -29,7 +29,7 @@ function turn(humanChoice) {
     $('#player').show();
     $('#player1').append('<li>' + humanChoice + '</li>');
     aiTotalWin += 1;
-    if (aiTotalWin >= 3) {
+    if (aiTotalWin >= 4) {
       $("#main").hide();
       $('#ai-won').show();
     }
@@ -38,7 +38,7 @@ function turn(humanChoice) {
     $('#player').show();
     $('#player1').append('<li>' + humanChoice + '</li>');
     aiTotalWin += 1;
-    if (aiTotalWin >= 3) {
+    if (aiTotalWin >= 4) {
       $("#main").hide();
       $('#ai-won').show();
     }
@@ -47,7 +47,7 @@ function turn(humanChoice) {
   $('#player').show();
   $('#player1').append('<li>' + humanChoice + '</li>');
     aiTotalWin += 1;
-    if (aiTotalWin >= 3) {
+    if (aiTotalWin >= 4) {
       $("#main").hide();
       $('#ai-won').show();
     }
@@ -55,7 +55,7 @@ function turn(humanChoice) {
     $('#player').show();
     $('#player1').append('<li>' + humanChoice + '</li>');
     playerTotalWin += 1;
-    if (playerTotalWin >= 3) {
+    if (playerTotalWin >= 2) {
       $('#player-won').show();
       $("#main").hide();
     }

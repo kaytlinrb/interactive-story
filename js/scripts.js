@@ -1,7 +1,5 @@
 //Business Logic
 
-
-
 //UI
 $(document).ready(function(){
   $('button').click(function(){
@@ -21,6 +19,11 @@ $("#useHerb").click(function(){
 
 event.preventDefault();
   });
+
+////COVER////
+$('.cover-btn').click(function(){
+  window.location.href='../1/chapter1.html'
+});
 
 ////RIDDLE ONE/////
 $('#riddleAttemptButton1').click(function(){
@@ -94,6 +97,10 @@ $('.proceedButton4').click(function(){
 });
 
 /////PAGE FOUR/////
+$('.ch4p2').click(function(){
+  $("#ch4p1").hide();
+  $("#ch4p2").show();
+});
 $('.proceedButton5').click(function(){
   window.location.href='../5/chapter5.html';
 });
@@ -130,5 +137,11 @@ $('.proceedButton6').click(function(){
 $('#combatFinal').click(function(){
   window.location.href='/Users/Guest/Desktop/interactive-story/combat.html#3042267';
 });
+
+////PAGE SEVEN////
+$('.proceedButtonLast').click(function(){
+  window.location.href='../../chapters/cover/cover.html';
+});
+
 
 });
